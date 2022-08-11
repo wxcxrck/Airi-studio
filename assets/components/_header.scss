@@ -1,0 +1,56 @@
+.header {
+    margin-top: 54px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__name {
+        @include font ('Montserrat', 400, 14px, $black);
+        display: block;
+        margin-top: 11px;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
+    }
+    &__wrapper--nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__togler {
+        margin-left: 84px;
+    }
+    &__link {
+        @include font ('Montserrat', 500, 14px, $black);
+        margin-left: 75px;
+        &:hover {
+            color: $coroll;
+        }
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .header {
+        margin-top: 20px;
+        &__link {
+            margin: 0;
+        }
+    }
+}
+@media screen and (max-width:760px) {
+    .header {
+        margin-top: 0;
+        &__nav {
+            display: none;
+        }
+        &__logo {
+            width: 90px;
+        }
+    }
+    .toggler__btn--open {
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,127 @@
+.project {
+    margin-bottom: 92px;
+    &__sperma {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__description {
+        @include font("Montserrat", 400, 12px, $black);
+        max-width: 257px;
+    }
+    
+    &__title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: $coroll;
+        padding: 25px 28px 6px;
+    }
+
+    &__btn {
+        @include font("Montserrat", 500, 12px, $white);
+        background: $coroll;
+        border-radius: 3px;
+        padding: 5px 12px;
+        margin-bottom: 37px;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: center;
+    }
+    &__description {
+        margin-left: 30px;
+        margin-bottom: 31px;
+    }
+    &__box {
+        width: 317px;
+        background: $white;
+        box-shadow: 0px 0px 38px 3px rgba(0, 0, 0, 0.14);
+        border-radius: 5px;
+    }
+    &__glava {
+        @include font("Montserrat", 800, 32px, $black);
+        display: flex;
+        justify-content: center;
+        margin-top: 98px;
+        margin-bottom: 54px;
+    }
+    &-slide {
+        padding-bottom: 55px;
+    }
+}
+.slid-button-next {
+    position: absolute;
+    right: -63px;
+    top: 50%;
+    transform: translate(-50%, -62px);
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    bottom: 0;
+    background: #e5e5e5;
+    width: 95px;
+    height: 20px;
+    border-radius: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.swiper-pagination-bullet {
+    background: #e5e5e5;
+}
+.swiper-pagination-bullet-active {
+    background: #db5050;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+    width: 27px;
+    height: 14px;
+    border-radius: 54px;
+}
+@media screen and (max-width: 1215px) {
+    .project {
+        &__box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    }
+    .slid-button-next {
+        right: 50px;
+        top: auto;
+        bottom: 0px;
+        transform: translate(-0px, -0px);
+        z-index: 9;
+    }
+}
+@media screen and (max-width: 350px) {
+    .project {
+        &__info {
+           text-align: center;
+        }
+        &__description {
+            margin: 0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        &__glava {
+            font-weight: 500;
+            font-size: 22px;
+            margin-top: 34px;
+            margin-bottom: 20px;
+        }
+    }
+    .slid-button-next {
+        right: 50px;
+        top: auto;
+        bottom: 0px;
+        transform: translate(-0px, -0px);
+        z-index: 9;
+    }
+}

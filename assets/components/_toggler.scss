@@ -1,0 +1,90 @@
+.toggler {
+    font-family: "Montserrat";
+    position: relative;
+    &__block {
+        overflow: hidden;
+        position: absolute;
+        right: 30px;
+        top: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 0;
+        height: 0;
+        background: $white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        transition: 0.3s;
+        z-index: 5;
+    }
+    &.active .toggler__block {
+        width: 160px;
+        height: 128px;
+    }
+    &__btn--open {
+        margin-left: 84px;
+        z-index: 6;
+    }
+    &__language {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        color: $black;
+        margin-bottom: 5px;
+    }
+    &__btns {
+        display: flex;
+        gap: 4px;
+    }
+    &__btn {
+        width: 54px;
+        height: 30px;
+        background: #b1b1b1;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 13px;
+        color: #fff;
+        &.active {
+            background: $coroll;
+        }
+    }
+    &__topic {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        color: $black;
+        margin: 6px 0;
+    }
+    &__topic--wrapper {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    &__toggler {
+        width: 43px;
+        height: 23px;
+        background: #d9d9d9;
+        border-radius: 19px;
+        padding: 3px;
+        position: relative;
+       transition: 2s;
+    }
+    &__toggler--circle{
+        position: absolute;
+        left: 4px;
+        top: 5.5px;
+        width: 17px;
+        height: 17px;
+        background: #e85353;
+        border-radius: 64px;
+        transition: left 100ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__toggler.active .toggler__toggler--circle {
+        left: 28px;
+    }
+}

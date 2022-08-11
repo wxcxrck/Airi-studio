@@ -1,0 +1,32 @@
+.hero {
+    font-family: "Montserrat";
+    padding-top: 133px;
+    &__content {
+        text-align: center;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        color: $black;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 40px;
+        text-align: center;
+        color: $coroll;
+        max-width: 676px;
+        margin: 15px auto 60px;
+    }
+    &__img {
+        max-width: 100%;
+    }
+}
+@media screen  and (max-width:620px){
+    .hero {
+        padding-top:50px ;
+        &__title {
+            font-weight: 400;
+            font-size: 25px;        
+        }
+    }
+}

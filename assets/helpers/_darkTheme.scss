@@ -1,0 +1,15 @@
+.body.active {
+    background: $black;
+}
+.body.active .color--variables__theme {
+    color: $white;
+}
+.body.active .fill--variables__them {
+    fill: $white;
+}
+.body.active .bg--variables__them {
+    background: $black;
+}
+.body.active .bg--variables__them--white {
+    background: $white;
+}

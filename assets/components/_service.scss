@@ -1,0 +1,107 @@
+.service {
+    margin-top: 268px;
+
+    &__title {
+        @include font ('Montserrat', 800, 32px, $black);
+        display: flex;
+        justify-content: center;
+    }
+
+    &__subtitle {
+        @include font ('Montserrat', 700, 16px, $coroll);
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__info {
+        // display: flex;    
+        text-align: center;
+    }
+
+    &__biznes {
+        margin: 0 auto;
+    }
+
+    &__desk {
+        @include font ('Montserrat', 400, 12px, $black);
+        max-width: 206px;
+        margin: 0 auto;
+    }
+
+    &__biznes {
+        display: flex;
+        align-items: center;
+    }
+
+    &__items {
+        margin-top: 74px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__roditel {
+        display: flex;
+        justify-content: center;
+        margin-top: 97px;
+    }
+}
+
+.serviceBtn {
+    position: absolute;
+    right: -63px;
+    top: 50%;
+    transform: translate(-50%, -62px);
+}
+
+.swiper-pagination-bullet {
+    background: #e5e5e5;
+}
+
+.swiper-pagination-bullet-active {
+    background: #db5050;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+    width: 27px;
+    height: 14px;
+    border-radius: 54px;
+}
+
+.service-slide {
+    padding-bottom: 97px;
+}
+
+.pogination-service {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    bottom: -120px;
+    background: #e5e5e5;
+    width: 95px;
+    height: 20px;
+    border-radius: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width:1215px) {
+    .serviceBtn {
+        top: 340px;
+        right: 150px;
+        z-index: 9;
+    }
+}
+@media screen and (max-width:520px) {
+    .service {
+        margin-top: 80px;
+        &__title {
+            font-weight: 500;
+            font-size: 22px;
+        }
+    }
+    .serviceBtn {
+        top: 290px;
+        right: 45%;
+    }
+}

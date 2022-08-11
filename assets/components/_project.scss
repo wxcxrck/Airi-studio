@@ -1,0 +1,59 @@
+.project {
+    &__supreame {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__description {
+        @include font ('Montserrat', 400, 12px, $black);
+        max-width: 257px;
+    }
+
+    &__title {
+        @include font ('Montserrat', 700, 20px, $nedored);
+        padding: 25px 28px 6px;
+    }
+
+    &__btn {
+        @include font ('Montserrat', 500, 12px, $white);
+        background: #E85353;
+        border-radius: 3px;
+        padding: 5px 12px;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: center;
+    }
+    &__description {
+        margin-left: 30px;
+        margin-bottom: 31px;
+    }
+    &__box {
+        width: 317px;
+        background: $white;
+        box-shadow: 0px 0px 38px 3px rgba(0, 0, 0, 0.14);
+        border-radius: 5px;
+    }
+    &__glava {
+        @include font ('Montserrat', 800, 32px, $black);
+        display: flex;
+        justify-content: center;
+        margin-top: 98px;
+        margin-bottom: 54px;
+    }
+    &__roditel {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    &__concat {
+        @include font ('Montserrat', 700, 20px, $white);
+        padding: 13px 28px;
+        background: $coroll;
+        margin-top: 67px;
+        margin-bottom: 92px;
+    }
+    &__myshka {
+        display: flex;
+        justify-content: center;
+    }
+}
